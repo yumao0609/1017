@@ -182,6 +182,29 @@ $(document).ready(function () {
 <pre class="r"><code>library(readr)
 filmVotingData &lt;- read_csv(&quot;https://raw.githubusercontent.com/tpemartin/course-107-1-programming-for-data-science/master/data/%E7%AC%AC%E4%B8%89%E5%B1%86%E7%B6%93%E6%BF%9F%E6%92%AD%E5%AE%A2%E7%AB%B6%E8%B3%BD%E5%8F%83%E8%B3%BD%E4%BD%9C%E5%93%81%E6%8A%95%E7%A5%A8%E7%B5%90%E6%9E%9C%E6%A8%A3%E6%9C%AC%20-%20Sheet1.csv&quot;)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUGFyc2VkIHdpdGggY29sdW1uIHNwZWNpZmljYXRpb246XG5jb2xzKFxuICBUaW1lc3RhbXAgPSBjb2xfY2hhcmFjdGVyKCksXG4gIGClWKXNpuikuKZ+pOuk6aFdxefD0qW7pEilzqFeYCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgvdC/777cp0GzzLPfxXequrx2pPmkR7OhID0gY29sX2NoYXJhY3RlcigpXG4pXG4ifQ== -->
+<pre><code>Parsed with column specification:
+cols(
+  Timestamp = col_character(),
+  `&lt;U+613C&gt;&lt;U+3E35&gt;X&lt;U+613C&gt;&lt;U+3E35&gt;&lt;U+0366&gt;褸&lt;U+613C&gt;&lt;U+3E36&gt;~&lt;U+613C&gt;&lt;U+3E34&gt;&lt;U+653C&gt;&lt;U+3E62&gt;&lt;U+613C&gt;&lt;U+3E34&gt;&lt;U+653C&gt;&lt;U+3E39&gt;&lt;U+613C&gt;&lt;U+3E31&gt;]挼&lt;U+3E35&gt;&lt;U+653C&gt;&lt;U+3E37&gt;挼&lt;U+3E33&gt;&lt;U+04A5&gt;&lt;U+623C&gt;&lt;U+3E62&gt;&lt;U+613C&gt;&lt;U+3E34&gt;H&lt;U+613C&gt;&lt;U+3E35&gt;Ρ^` = col_character(),
+  &lt;U+623C&gt;&lt;U+3E64&gt;&lt;U+043F&gt;&lt;U+653C&gt;&lt;U+3E66&gt;&lt;U+623C&gt;&lt;U+3E65&gt;&lt;U+0727&gt;A&lt;U+623C&gt;&lt;U+3E33&gt;&lt;U+0333&gt;&lt;U+643C&gt;&lt;U+3E66&gt;挼&lt;U+3E35&gt;w&lt;U+613C&gt;&lt;U+3E61&gt;&lt;U+623C&gt;&lt;U+3E61&gt;&lt;U+623C&gt;&lt;U+3E63&gt;v&lt;U+613C&gt;&lt;U+3E34&gt;&lt;U+663C&gt;&lt;U+3E39&gt;&lt;U+613C&gt;&lt;U+3E34&gt;G&lt;U+623C&gt;&lt;U+3E33&gt;&lt;U+613C&gt;&lt;U+3E31&gt; = col_character()
+)</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShnb29nbGVzaGVldHMpXG5nc19hdXRoKG5ld191c2VyID0gVFJVRSlcbmBgYCJ9 -->
+<pre class="r"><code>library(googlesheets)
+gs_auth(new_user = TRUE)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiTm8gdG9rZW4gY3VycmVudGx5IGluIGZvcmNlLlxuQWRkaW5nIC5odHRyLW9hdXRoIHRvIC5naXRpZ25vcmVcbldhaXRpbmcgZm9yIGF1dGhlbnRpY2F0aW9uIGluIGJyb3dzZXIuLi5cblByZXNzIEVzYy9DdHJsICsgQyB0byBhYm9ydFxuQXV0aGVudGljYXRpb24gY29tcGxldGUuXG4ifQ== -->
+<pre><code>No token currently in force.
+Adding .httr-oauth to .gitignore
+Waiting for authentication in browser...
+Press Esc/Ctrl + C to abort
+Authentication complete.</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>```</p>
@@ -189,18 +212,21 @@ filmVotingData &lt;- read_csv(&quot;https://raw.githubusercontent.com/tpemartin/
 <p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Ctrl+Shift+Enter</em>.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYTwtYyhcIkEsIEJcIixcIkIsIENcIilcbmFcbnN0cl9zcGxpdF9maXhlZChhLFwiLCBcIiwgbj0zKS0+Ylxuc3RyX2MoYiktPmNcbmNcbnRhYmxlKGIpXG5iQUFBXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYTwtYyhcIkEsIEJcIixcIkIsIENcIilcbmFcbnN0cl9zcGxpdF9maXhlZChhLFwiLCBcIiwgbj0zKS0+Ylxuc3RyX2MoYiktPmNcbmNcbnRhYmxlKGIpXG5iQUFBXG5saWJyYXJ5KGdvb2dsZXNoZWV0cylcbmdzX2F1dGgobmV3X3VzZXIgPSBUUlVFKVxuXG5cbmBgYCJ9 -->
 <pre class="r"><code>a&lt;-c(&quot;A, B&quot;,&quot;B, C&quot;)
 a
 str_split_fixed(a,&quot;, &quot;, n=3)-&gt;b
 str_c(b)-&gt;c
 c
 table(b)
-bAAA</code></pre>
+bAAA
+library(googlesheets)
+gs_auth(new_user = TRUE)
+</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIjIwMTguMTAuMTciDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KYGBge3J9DQpsaWJyYXJ5KHJlYWRyKQ0KZmlsbVZvdGluZ0RhdGEgPC0gcmVhZF9jc3YoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS90cGVtYXJ0aW4vY291cnNlLTEwNy0xLXByb2dyYW1taW5nLWZvci1kYXRhLXNjaWVuY2UvbWFzdGVyL2RhdGEvJUU3JUFDJUFDJUU0JUI4JTg5JUU1JUIxJTg2JUU3JUI2JTkzJUU2JUJGJTlGJUU2JTkyJUFEJUU1JUFFJUEyJUU3JUFCJUI2JUU4JUIzJUJEJUU1JThGJTgzJUU4JUIzJUJEJUU0JUJEJTlDJUU1JTkzJTgxJUU2JThBJTk1JUU3JUE1JUE4JUU3JUI1JTkwJUU2JTlFJTlDJUU2JUE4JUEzJUU2JTlDJUFDJTIwLSUyMFNoZWV0MS5jc3YiKQ0KYGBgDQoNCg0KYGBgDQoNClRoaXMgaXMgYW4gW1IgTWFya2Rvd25dKGh0dHA6Ly9ybWFya2Rvd24ucnN0dWRpby5jb20pIE5vdGVib29rLiBXaGVuIHlvdSBleGVjdXRlIGNvZGUgd2l0aGluIHRoZSBub3RlYm9vaywgdGhlIHJlc3VsdHMgYXBwZWFyIGJlbmVhdGggdGhlIGNvZGUuIA0KDQpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ3RybCtTaGlmdCtFbnRlciouIA0KDQpgYGB7cn0NCmE8LWMoIkEsIEIiLCJCLCBDIikNCmENCnN0cl9zcGxpdF9maXhlZChhLCIsICIsIG49MyktPmINCnN0cl9jKGIpLT5jDQpjDQp0YWJsZShiKQ0KYkFBQQ0KYGBgDQo=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIjIwMTguMTAuMTciDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KYGBge3J9DQpsaWJyYXJ5KHJlYWRyKQ0KZmlsbVZvdGluZ0RhdGEgPC0gcmVhZF9jc3YoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS90cGVtYXJ0aW4vY291cnNlLTEwNy0xLXByb2dyYW1taW5nLWZvci1kYXRhLXNjaWVuY2UvbWFzdGVyL2RhdGEvJUU3JUFDJUFDJUU0JUI4JTg5JUU1JUIxJTg2JUU3JUI2JTkzJUU2JUJGJTlGJUU2JTkyJUFEJUU1JUFFJUEyJUU3JUFCJUI2JUU4JUIzJUJEJUU1JThGJTgzJUU4JUIzJUJEJUU0JUJEJTlDJUU1JTkzJTgxJUU2JThBJTk1JUU3JUE1JUE4JUU3JUI1JTkwJUU2JTlFJTlDJUU2JUE4JUEzJUU2JTlDJUFDJTIwLSUyMFNoZWV0MS5jc3YiKQ0KbGlicmFyeShnb29nbGVzaGVldHMpDQpnc19hdXRoKG5ld191c2VyID0gVFJVRSkNCmBgYA0KDQpgYGB7cn0NCg0KYGBgDQoNCmBgYA0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiANCg0KVHJ5IGV4ZWN1dGluZyB0aGlzIGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqUnVuKiBidXR0b24gd2l0aGluIHRoZSBjaHVuayBvciBieSBwbGFjaW5nIHlvdXIgY3Vyc29yIGluc2lkZSBpdCBhbmQgcHJlc3NpbmcgKkN0cmwrU2hpZnQrRW50ZXIqLiANCg0KYGBge3J9DQphPC1jKCJBLCBCIiwiQiwgQyIpDQphDQpzdHJfc3BsaXRfZml4ZWQoYSwiLCAiLCBuPTMpLT5iDQpzdHJfYyhiKS0+Yw0KYw0KdGFibGUoYikNCmJBQUENCmxpYnJhcnkoZ29vZ2xlc2hlZXRzKQ0KZ3NfYXV0aChuZXdfdXNlciA9IFRSVUUpDQoNCg0KYGBgDQo=</div>
 
 
 
